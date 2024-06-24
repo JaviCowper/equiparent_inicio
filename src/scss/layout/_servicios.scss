@@ -1,0 +1,49 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+      
+}
+
+.servicio h3 {        
+    color: v.$verde;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.servicio p {
+    font-size: 2rem;
+    line-height: 2;
+    text-align: center;
+    padding: 2rem;
+}
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: v.$amarillo;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@include m.desktop {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }  
+}
+@include m.desktopXL {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }  
+}

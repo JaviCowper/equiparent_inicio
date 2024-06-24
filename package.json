@@ -1,0 +1,32 @@
+{
+    "name": "equiparent_inicio",
+    "version": "1.0.0",
+    "description": "Incluyendo NPM, SASS y Gulp",
+    "type": "module",
+    "scripts": {
+        "sass": "sass --watch src/scss:build/css",
+        "css": "gulp css",
+        "js": "gulp js",
+        "dev": "gulp"
+    },
+    "keywords": [
+        "SASS",
+        "NPM",
+        "Gulp"
+    ],
+    "author": "Javiera Cowper",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^5.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-sass": "^5.1.0",
+        "gulp-uglify": "^3.0.2",
+        "sass": "^1.77.5"
+    },
+    "main": "gulpfile.js",
+    "dependencies": {
+        "build": "^0.1.4",
+        "js": "^0.1.0",
+        "react-calendar": "^5.0.0"
+    }
+}

@@ -1,0 +1,131 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+    font-size: 62.5%; /* 1 rem = 10px */
+    box-sizing: border-box; /* Hack para Box Model **/
+    scroll-padding-top: 0rem;
+    font-family: v.$fuente_principal;
+    
+}
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+header {
+    font-family: v.$fuente_principal;
+}
+body {
+    font-family: v.$fuente_principal;
+    font-optical-sizing: auto;
+    background-image: linear-gradient(to top, v.$blanco 0%, v.$grisClaro 100% );
+   
+    // &.overflow-hidden {
+    //     overflow: hidden;
+    // }  
+}
+  p {
+    font-family: v.$fuente_principal;
+    font-size: 1rem;
+    color: v.$negro;
+    line-height: 1.5;
+    padding: 1rem;
+  }
+
+.contenedor {
+    font-family: v.$fuente_principal;
+    max-width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;        
+ }
+ .iframe {
+    overflow-y: auto;
+    overflow-x: auto;
+    overflow: unset;
+    font-family: v.$fuente_principal;
+ }
+a {
+    text-decoration: none;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;    
+}
+span {
+    display: block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: v.$grisClaro;    
+}
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    background-position: center center;
+}
+.boton {
+    font-family: v.$fuente_principal;
+    background-color: v.$verde;
+    color: v.$blanco;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+/** Utilidades **/
+.w-sm-100 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
+.flex {
+    display: flex;
+}
+.alinear-derecha {
+    justify-content: flex-end;
+}
+    
+footer {
+    font-family: v.$fuente_principal;
+    font-size: 1.3rem;
+    font-weight: 700;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
